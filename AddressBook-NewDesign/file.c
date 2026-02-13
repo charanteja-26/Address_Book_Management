@@ -16,7 +16,7 @@ void saveContactsToFile(AddressBook *addressBook)
 
 void loadContactsFromFile(AddressBook *addressBook) 
 {
-    FILE *fptr = fopen("contact.csv","r");
+    FILE *fptr = fopen("contact.csv","w+");
     if(fptr == NULL)
     {
         printf("Error : No file is found to load the contacts from.\n");
